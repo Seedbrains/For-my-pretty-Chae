@@ -43,6 +43,16 @@ I love you so much baby, I can't wait to go back and cuddle all day long with yo
       heart.style.transform = `scale(${0.5 + Math.random()}) rotate(45deg)`;
       document.body.appendChild(heart);
     }
+    for (let i = 0; i < 60; i++) {
+  let flower = document.createElement('div');
+  flower.classList.add('flower');
+  flower.style.left = Math.random() * 100 + "vw";
+  flower.style.top = Math.random() * 100 + "vh";
+  flower.style.transform = `rotate(${Math.random() * 360}deg) scale(${0.5 + Math.random()})`;
+  flower.style.opacity = 0.3 + Math.random() * 0.5;
+  flower.style.animationDuration = (20 + Math.random() * 20) + "s";
+  document.body.appendChild(flower);
+}
   </script>
 
 </body>
